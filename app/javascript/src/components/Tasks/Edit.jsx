@@ -54,6 +54,7 @@ const Edit = ({ history }) => {
       setTitle(title);
       setAssignedUser(assigned_user);
       setUserId(assigned_user.id);
+      history.push("/");
     } catch (error) {
       logger.error(error);
     }

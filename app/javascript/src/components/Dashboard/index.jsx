@@ -18,6 +18,7 @@ const Dashboard = ({ history }) => {
       } = await tasksApi.list();
       setTasks(tasks);
       setLoading(false);
+      history.push("/");
     } catch (error) {
       logger.error(error);
       setLoading(false);
