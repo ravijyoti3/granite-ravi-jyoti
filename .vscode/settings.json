@@ -18,5 +18,5 @@
     }
   },
   "ruby.format": "rubocop",
-  "cSpell.words": ["Toastr"]
+  "cSpell.words": ["Signup", "Toastr"]
 }
