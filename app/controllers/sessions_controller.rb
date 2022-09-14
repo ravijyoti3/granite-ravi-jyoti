@@ -8,11 +8,11 @@ class SessionsController < ApplicationController
     unless @user.authenticate(login_params[:password])
       respond_with_error(t("session.incorrect_credentials"), :unauthorized)
     end
+  end
 
-    def destroy
-      @current_user = nil
-      # any other session cleanup tasks can be done here...
-    end
+  def destroy
+    @current_user = nil
+    # any other session cleanup tasks can be done here...
   end
 
   private
